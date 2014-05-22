@@ -7,12 +7,16 @@
 //
 
 #import "ViewController.h"
+#import "Contact.h"
+#import "ContactsSvcCache.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+
+ContactsSvcCache *contactsSvc = nil;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +31,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    contactsSvc = [[ContactsSvcCache alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,6 +43,13 @@
 
 - (IBAction)saveContact:(id)sender {
     NSLog(@"saveContact");
+    
+    Contact *contact = [[Contact alloc] init];
+    contact.name = _name.text;
+    contact.phone = _phone.text;
+    contact.email = _email.text;
+    [contactsSvc createContact:contact];
+    NSLog(@"saveContact: contact saved!");
 }
 
 - (IBAction)deleteContact:(id)sender {

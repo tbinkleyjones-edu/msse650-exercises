@@ -21,6 +21,8 @@
 		3D789CCD192E42D6004426F1 /* ContactMgrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D789CCC192E42D6004426F1 /* ContactMgrTests.m */; };
 		3D789CD9192E45A3004426F1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D789CD7192E45A3004426F1 /* ViewController.m */; };
 		3D789CDA192E45A3004426F1 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D789CD8192E45A3004426F1 /* ViewController.xib */; };
+		3D789CDE192E47EE004426F1 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D789CDD192E47EE004426F1 /* Contact.m */; };
+		3D789CE2192E4957004426F1 /* ContactsSvcCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D789CE1192E4957004426F1 /* ContactsSvcCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,11 @@
 		3D789CD6192E45A3004426F1 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3D789CD7192E45A3004426F1 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3D789CD8192E45A3004426F1 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		3D789CDC192E47EE004426F1 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
+		3D789CDD192E47EE004426F1 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
+		3D789CDF192E48C7004426F1 /* ContactsSvc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactsSvc.h; sourceTree = "<group>"; };
+		3D789CE0192E4957004426F1 /* ContactsSvcCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsSvcCache.h; sourceTree = "<group>"; };
+		3D789CE1192E4957004426F1 /* ContactsSvcCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsSvcCache.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +119,7 @@
 		3D789CAD192E42D6004426F1 /* ContactMgr */ = {
 			isa = PBXGroup;
 			children = (
+				3D789CDB192E47CB004426F1 /* Model */,
 				3D789CB6192E42D6004426F1 /* AppDelegate.h */,
 				3D789CB7192E42D6004426F1 /* AppDelegate.m */,
 				3D789CB9192E42D6004426F1 /* Images.xcassets */,
@@ -150,6 +158,18 @@
 				3D789CC9192E42D6004426F1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D789CDB192E47CB004426F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D789CDC192E47EE004426F1 /* Contact.h */,
+				3D789CDD192E47EE004426F1 /* Contact.m */,
+				3D789CDF192E48C7004426F1 /* ContactsSvc.h */,
+				3D789CE0192E4957004426F1 /* ContactsSvcCache.h */,
+				3D789CE1192E4957004426F1 /* ContactsSvcCache.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D789CE2192E4957004426F1 /* ContactsSvcCache.m in Sources */,
+				3D789CDE192E47EE004426F1 /* Contact.m in Sources */,
 				3D789CD9192E45A3004426F1 /* ViewController.m in Sources */,
 				3D789CB8192E42D6004426F1 /* AppDelegate.m in Sources */,
 				3D789CB4192E42D6004426F1 /* main.m in Sources */,
@@ -447,6 +469,7 @@
 				3D789CD2192E42D6004426F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D789CD3192E42D6004426F1 /* Build configuration list for PBXNativeTarget "ContactMgrTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +478,7 @@
 				3D789CD5192E42D6004426F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
