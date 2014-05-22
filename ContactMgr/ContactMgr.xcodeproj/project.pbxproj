@@ -19,6 +19,8 @@
 		3D789CC3192E42D6004426F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D789CAB192E42D6004426F1 /* UIKit.framework */; };
 		3D789CCB192E42D6004426F1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D789CC9192E42D6004426F1 /* InfoPlist.strings */; };
 		3D789CCD192E42D6004426F1 /* ContactMgrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D789CCC192E42D6004426F1 /* ContactMgrTests.m */; };
+		3D789CD9192E45A3004426F1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D789CD7192E45A3004426F1 /* ViewController.m */; };
+		3D789CDA192E45A3004426F1 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D789CD8192E45A3004426F1 /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		3D789CC8192E42D6004426F1 /* ContactMgrTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ContactMgrTests-Info.plist"; sourceTree = "<group>"; };
 		3D789CCA192E42D6004426F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3D789CCC192E42D6004426F1 /* ContactMgrTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactMgrTests.m; sourceTree = "<group>"; };
+		3D789CD6192E45A3004426F1 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3D789CD7192E45A3004426F1 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3D789CD8192E45A3004426F1 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +116,9 @@
 				3D789CB7192E42D6004426F1 /* AppDelegate.m */,
 				3D789CB9192E42D6004426F1 /* Images.xcassets */,
 				3D789CAE192E42D6004426F1 /* Supporting Files */,
+				3D789CD6192E45A3004426F1 /* ViewController.h */,
+				3D789CD7192E45A3004426F1 /* ViewController.m */,
+				3D789CD8192E45A3004426F1 /* ViewController.xib */,
 			);
 			path = ContactMgr;
 			sourceTree = "<group>";
@@ -220,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D789CB2192E42D6004426F1 /* InfoPlist.strings in Resources */,
+				3D789CDA192E45A3004426F1 /* ViewController.xib in Resources */,
 				3D789CBA192E42D6004426F1 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D789CD9192E45A3004426F1 /* ViewController.m in Sources */,
 				3D789CB8192E42D6004426F1 /* AppDelegate.m in Sources */,
 				3D789CB4192E42D6004426F1 /* main.m in Sources */,
 			);
