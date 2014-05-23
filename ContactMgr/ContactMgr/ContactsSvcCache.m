@@ -21,7 +21,7 @@ NSMutableArray *contacts = nil;
 }
 
 - (Contact *) createContact: (Contact *) contact {
-    [contacts addObject:contacts];
+    [contacts addObject:contact];
     return contact;
 }
 

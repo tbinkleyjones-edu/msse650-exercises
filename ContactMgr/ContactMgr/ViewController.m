@@ -44,15 +44,40 @@ ContactsSvcCache *contactsSvc = nil;
 - (IBAction)saveContact:(id)sender {
     NSLog(@"saveContact");
     
+    [self.view endEditing:YES];
+    
     Contact *contact = [[Contact alloc] init];
     contact.name = _name.text;
     contact.phone = _phone.text;
     contact.email = _email.text;
     [contactsSvc createContact:contact];
+    
+    [self.tableView reloadData];
     NSLog(@"saveContact: contact saved!");
 }
 
 - (IBAction)deleteContact:(id)sender {
     NSLog(@"deleteContact");
+    
+    [self.view endEditing:YES];
+    
 }
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [[contactsSvc retrieveAllContacts] count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *simpleTableIdentifier = @"SimpleTableItem";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+    }
+    
+    Contact *contact = [[contactsSvc retrieveAllContacts] objectAtIndex:indexPath.row];
+    cell.textLabel.text = contact.name;
+    return cell;
+}
+
 @end

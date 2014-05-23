@@ -9,6 +9,7 @@
                 <outlet property="email" destination="byf-mV-pAe" id="8HE-Db-OtH"/>
                 <outlet property="name" destination="IIQ-am-YEy" id="b6Y-rq-pus"/>
                 <outlet property="phone" destination="Boe-wC-AOq" id="cE3-PA-ryM"/>
+                <outlet property="tableView" destination="aZQ-eF-FfB" id="Zu1-wB-gvh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -83,6 +84,9 @@
                     <rect key="frame" x="0.0" y="197" width="320" height="364"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="klJ-Fl-Pzf"/>
+                    </connections>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
