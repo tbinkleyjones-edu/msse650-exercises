@@ -64,10 +64,14 @@ ContactsSvcCache *contactsSvc = nil;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [[contactsSvc retrieveAllContacts] count];
+    NSInteger count = [[contactsSvc retrieveAllContacts] count];
+    NSLog(@"number of rows in section %ld: %ld", (long)section, (long)count);
+    return count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"retrieving cell for row at index path %@", indexPath);
+
     static NSString *simpleTableIdentifier = @"SimpleTableItem";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];

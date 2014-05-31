@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22895748193A562500062411 /* ContactSvcsCacheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22895747193A562500062411 /* ContactSvcsCacheTests.m */; };
 		3D789CA8192E42D6004426F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D789CA7192E42D6004426F1 /* Foundation.framework */; };
 		3D789CAA192E42D6004426F1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D789CA9192E42D6004426F1 /* CoreGraphics.framework */; };
 		3D789CAC192E42D6004426F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D789CAB192E42D6004426F1 /* UIKit.framework */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22895747193A562500062411 /* ContactSvcsCacheTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactSvcsCacheTests.m; sourceTree = "<group>"; };
 		3D789CA4192E42D6004426F1 /* ContactMgr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactMgr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D789CA7192E42D6004426F1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3D789CA9192E42D6004426F1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -86,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22895746193A55F600062411 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22895747193A562500062411 /* ContactSvcsCacheTests.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		3D789C9B192E42D6004426F1 = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +155,7 @@
 		3D789CC6192E42D6004426F1 /* ContactMgrTests */ = {
 			isa = PBXGroup;
 			children = (
+				22895746193A55F600062411 /* Model */,
 				3D789CCC192E42D6004426F1 /* ContactMgrTests.m */,
 				3D789CC7192E42D6004426F1 /* Supporting Files */,
 			);
@@ -280,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22895748193A562500062411 /* ContactSvcsCacheTests.m in Sources */,
 				3D789CCD192E42D6004426F1 /* ContactMgrTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

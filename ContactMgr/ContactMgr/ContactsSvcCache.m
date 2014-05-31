@@ -34,6 +34,7 @@ NSMutableArray *contacts = nil;
 }
 
 - (Contact *) deleteContact: (Contact *) contact {
+    [contacts removeObject: contact];
     return contact;
 }
 

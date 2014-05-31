@@ -1,18 +1,18 @@
 //
-//  ContactMgrTests.m
-//  ContactMgrTests
+//  ContactMgrSBTests.m
+//  ContactMgrSBTests
 //
-//  Created by Timothy Binkley-Jones on 5/22/14.
+//  Created by Tim Binkley-Jones on 5/29/14.
 //  Copyright (c) 2014 msse650. All rights reserved.
 //
 
 //#import <XCTest/XCTest.h>
 //
-//@interface ContactMgrTests : XCTestCase
+//@interface ContactMgrSBTests : XCTestCase
 //
 //@end
 //
-//@implementation ContactMgrTests
+//@implementation ContactMgrSBTests
 //
 //- (void)setUp
 //{

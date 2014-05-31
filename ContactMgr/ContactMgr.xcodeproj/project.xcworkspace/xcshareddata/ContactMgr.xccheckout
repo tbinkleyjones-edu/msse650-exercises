@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2A1A9D74-F5D5-49F0-AE35-864C91E3030A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ContactMgr</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9EA232CA-D2FD-40E3-8AEA-AFF2A16B2EEB</key>
+		<string>https://github.com/tbinkleyjones-edu/msse650-exercises.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ContactMgr/ContactMgr.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9EA232CA-D2FD-40E3-8AEA-AFF2A16B2EEB</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/tbinkleyjones-edu/msse650-exercises.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9EA232CA-D2FD-40E3-8AEA-AFF2A16B2EEB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9EA232CA-D2FD-40E3-8AEA-AFF2A16B2EEB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>msse650-exercises</string>
+		</dict>
+	</array>
+</dict>
+</plist>
