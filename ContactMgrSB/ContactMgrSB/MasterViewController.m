@@ -9,9 +9,10 @@
 #import "MasterViewController.h"
 
 #import "DetailViewController.h"
+#import "ContactsSvcCache.h"
 
 @interface MasterViewController () {
-    NSMutableArray *_objects;
+    ContactsSvcCache *contactsSvc;
 }
 @end
 
@@ -24,12 +25,16 @@
 
 - (void)viewDidLoad
 {
+    NSLog(@"viewDidLoad");
+
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
+
+    contactsSvc = [[ContactsSvcCache alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,11 +45,14 @@
 
 - (void)insertNewObject:(id)sender
 {
-    if (!_objects) {
-        _objects = [[NSMutableArray alloc] init];
-    }
-    [_objects insertObject:[NSDate date] atIndex:0];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+    NSInteger row = [[contactsSvc retrieveAllContacts] count];
+    Contact *contact = [[Contact alloc] init];
+    contact.name = @"name";
+    contact.phone = @"phone";
+    contact.email = @"email";
+    [contactsSvc createContact:contact];
+
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:row inSection:0];
     [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
@@ -57,14 +65,14 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _objects.count;
+    return [[contactsSvc retrieveAllContacts] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 
-    NSDate *object = _objects[indexPath.row];
+    Contact *object = [contactsSvc retrieveAllContacts][indexPath.row];
     cell.textLabel.text = [object description];
     return cell;
 }
@@ -78,7 +86,8 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [_objects removeObjectAtIndex:indexPath.row];
+        Contact *object = [contactsSvc retrieveAllContacts][indexPath.row];
+        [contactsSvc deleteContact:object];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
@@ -105,7 +114,7 @@
 {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = _objects[indexPath.row];
+        Contact *object = [contactsSvc retrieveAllContacts][indexPath.row];
         [[segue destinationViewController] setDetailItem:object];
     }
 }

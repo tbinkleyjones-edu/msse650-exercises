@@ -65,6 +65,7 @@
 		22895741193A470000062411 /* ContactsSvcCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsSvcCache.h; sourceTree = "<group>"; };
 		22895742193A470000062411 /* ContactsSvcCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsSvcCache.m; sourceTree = "<group>"; };
 		22895749193A597600062411 /* ContactSvcsCacheTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactSvcsCacheTests.m; sourceTree = "<group>"; };
+		22F8FF8C193BB77300636EA7 /* ContactOperationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactOperationDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +135,7 @@
 				224AE0FD1937B33800096DBD /* DetailViewController.m */,
 				224AE0FF1937B33800096DBD /* Images.xcassets */,
 				224AE0EB1937B33800096DBD /* Supporting Files */,
+				22F8FF8C193BB77300636EA7 /* ContactOperationDelegate.h */,
 			);
 			path = ContactMgrSB;
 			sourceTree = "<group>";
