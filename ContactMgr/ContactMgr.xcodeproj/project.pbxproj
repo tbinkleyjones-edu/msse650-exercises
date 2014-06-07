@@ -64,7 +64,7 @@
 		3D789CD8192E45A3004426F1 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		3D789CDC192E47EE004426F1 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
 		3D789CDD192E47EE004426F1 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
-		3D789CDF192E48C7004426F1 /* ContactsSvc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactsSvc.h; sourceTree = "<group>"; };
+		3D789CDF192E48C7004426F1 /* ContactSvc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactSvc.h; sourceTree = "<group>"; };
 		3D789CE0192E4957004426F1 /* ContactSvcCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactSvcCache.h; sourceTree = "<group>"; };
 		3D789CE1192E4957004426F1 /* ContactSvcCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactSvcCache.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -182,7 +182,7 @@
 			children = (
 				3D789CDC192E47EE004426F1 /* Contact.h */,
 				3D789CDD192E47EE004426F1 /* Contact.m */,
-				3D789CDF192E48C7004426F1 /* ContactsSvc.h */,
+				3D789CDF192E48C7004426F1 /* ContactSvc.h */,
 				3D789CE0192E4957004426F1 /* ContactSvcCache.h */,
 				3D789CE1192E4957004426F1 /* ContactSvcCache.m */,
 				2200022119435D8800B0295B /* ContactSvcArchive.h */,

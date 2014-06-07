@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "ContactsSvc.h"
+#import "ContactSvc.h"
 
 @interface ContactSvcCache : NSObject <ContactSvc>
 

@@ -7,6 +7,8 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "ContactSvc.h"
+#import "ContactSvcArchive.h"
 
 @interface ContactSvcArchiveTests : XCTestCase
 
@@ -14,21 +16,38 @@
 
 @implementation ContactSvcArchiveTests
 
-- (void)setUp
+//- (void)setUp
+//{
+//    [super setUp];
+//    // Put setup code here. This method is called before the invocation of each test method in the class.
+//}
+//
+//- (void)tearDown
+//{
+//    // Put teardown code here. This method is called after the invocation of each test method in the class.
+//    [super tearDown];
+//}
+
+- (void)testAddUpdateAndRemoveContacts
 {
-    [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    ContactSvc *service = [[ContactSvcArchive alloc] init];
+    XCTAssertEqual([service retrieveAllContacts].count, 0);
+
+    Contact *contact = [[Contact alloc] init];
+    contact.name = @"Joe User";
+
+    [service createContact:contact];
+    XCTAssertEqual([service retrieveAllContacts].count, 1);
+
+    contact.phone = @"8675309";
+    [service updateContact:contact];
+    XCTAssertEqual([service retrieveAllContacts].count, 1);
+    Contact *updatedContact = [[service retrieveAllContacts] objectAtIndex:0];
+    XCTAssertEqual(updatedContact.phone, @"8675309");
+
+    [service deleteContact:contact];
+    XCTAssertEqual([service retrieveAllContacts].count, 0);
 }
 
-- (void)tearDown
-{
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
-}
-
-- (void)testExample
-{
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
-}
 
 @end
