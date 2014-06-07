@@ -9,10 +9,10 @@
 #import "MasterViewController.h"
 
 #import "DetailViewController.h"
-#import "ContactsSvcCache.h"
+#import "ContactSvcCache.h"
 
 @interface MasterViewController () {
-    ContactsSvcCache *contactsSvc;
+    ContactSvcCache *contactsSvc;
 }
 @end
 
@@ -34,7 +34,7 @@
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
 
-    contactsSvc = [[ContactsSvcCache alloc] init];
+    contactsSvc = [[ContactSvcCache alloc] init];
 }
 
 - (void)didReceiveMemoryWarning

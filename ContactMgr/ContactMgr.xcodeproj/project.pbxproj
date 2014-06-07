@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22895748193A562500062411 /* ContactSvcsCacheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22895747193A562500062411 /* ContactSvcsCacheTests.m */; };
+		2200022319435D8800B0295B /* ContactSvcArchiveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2200022219435D8800B0295B /* ContactSvcArchiveTests.m */; };
+		2200022519435EE700B0295B /* ContactSvcArchiveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2200022419435EE700B0295B /* ContactSvcArchiveTests.m */; };
+		22895748193A562500062411 /* ContactSvcCacheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22895747193A562500062411 /* ContactSvcCacheTests.m */; };
 		3D789CA8192E42D6004426F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D789CA7192E42D6004426F1 /* Foundation.framework */; };
 		3D789CAA192E42D6004426F1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D789CA9192E42D6004426F1 /* CoreGraphics.framework */; };
 		3D789CAC192E42D6004426F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D789CAB192E42D6004426F1 /* UIKit.framework */; };
@@ -23,7 +25,7 @@
 		3D789CD9192E45A3004426F1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D789CD7192E45A3004426F1 /* ViewController.m */; };
 		3D789CDA192E45A3004426F1 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D789CD8192E45A3004426F1 /* ViewController.xib */; };
 		3D789CDE192E47EE004426F1 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D789CDD192E47EE004426F1 /* Contact.m */; };
-		3D789CE2192E4957004426F1 /* ContactsSvcCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D789CE1192E4957004426F1 /* ContactsSvcCache.m */; };
+		3D789CE2192E4957004426F1 /* ContactSvcCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D789CE1192E4957004426F1 /* ContactSvcCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		22895747193A562500062411 /* ContactSvcsCacheTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactSvcsCacheTests.m; sourceTree = "<group>"; };
+		2200022119435D8800B0295B /* ContactSvcArchiveTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactSvcArchiveTests.h; sourceTree = "<group>"; };
+		2200022219435D8800B0295B /* ContactSvcArchiveTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactSvcArchiveTests.m; sourceTree = "<group>"; };
+		2200022419435EE700B0295B /* ContactSvcArchiveTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactSvcArchiveTests.m; sourceTree = "<group>"; };
+		22895747193A562500062411 /* ContactSvcCacheTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactSvcCacheTests.m; sourceTree = "<group>"; };
 		3D789CA4192E42D6004426F1 /* ContactMgr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactMgr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D789CA7192E42D6004426F1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3D789CA9192E42D6004426F1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,8 +65,8 @@
 		3D789CDC192E47EE004426F1 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
 		3D789CDD192E47EE004426F1 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
 		3D789CDF192E48C7004426F1 /* ContactsSvc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactsSvc.h; sourceTree = "<group>"; };
-		3D789CE0192E4957004426F1 /* ContactsSvcCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsSvcCache.h; sourceTree = "<group>"; };
-		3D789CE1192E4957004426F1 /* ContactsSvcCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsSvcCache.m; sourceTree = "<group>"; };
+		3D789CE0192E4957004426F1 /* ContactSvcCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactSvcCache.h; sourceTree = "<group>"; };
+		3D789CE1192E4957004426F1 /* ContactSvcCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactSvcCache.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +96,8 @@
 		22895746193A55F600062411 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				22895747193A562500062411 /* ContactSvcsCacheTests.m */,
+				22895747193A562500062411 /* ContactSvcCacheTests.m */,
+				2200022419435EE700B0295B /* ContactSvcArchiveTests.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -177,8 +183,10 @@
 				3D789CDC192E47EE004426F1 /* Contact.h */,
 				3D789CDD192E47EE004426F1 /* Contact.m */,
 				3D789CDF192E48C7004426F1 /* ContactsSvc.h */,
-				3D789CE0192E4957004426F1 /* ContactsSvcCache.h */,
-				3D789CE1192E4957004426F1 /* ContactsSvcCache.m */,
+				3D789CE0192E4957004426F1 /* ContactSvcCache.h */,
+				3D789CE1192E4957004426F1 /* ContactSvcCache.m */,
+				2200022119435D8800B0295B /* ContactSvcArchiveTests.h */,
+				2200022219435D8800B0295B /* ContactSvcArchiveTests.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -279,8 +287,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D789CE2192E4957004426F1 /* ContactsSvcCache.m in Sources */,
+				3D789CE2192E4957004426F1 /* ContactSvcCache.m in Sources */,
 				3D789CDE192E47EE004426F1 /* Contact.m in Sources */,
+				2200022319435D8800B0295B /* ContactSvcArchiveTests.m in Sources */,
 				3D789CD9192E45A3004426F1 /* ViewController.m in Sources */,
 				3D789CB8192E42D6004426F1 /* AppDelegate.m in Sources */,
 				3D789CB4192E42D6004426F1 /* main.m in Sources */,
@@ -291,8 +300,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22895748193A562500062411 /* ContactSvcsCacheTests.m in Sources */,
+				22895748193A562500062411 /* ContactSvcCacheTests.m in Sources */,
 				3D789CCD192E42D6004426F1 /* ContactMgrTests.m in Sources */,
+				2200022519435EE700B0295B /* ContactSvcArchiveTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

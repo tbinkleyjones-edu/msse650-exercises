@@ -10,11 +10,11 @@
 
 #import "Contact.h"
 
-@protocol ContactsSvc <NSObject>
+@protocol ContactSvc <NSObject>
 
 - (Contact *) createContact: (Contact *) contact;
 - (NSMutableArray *) retrieveAllContacts;
-- (Contact *) udpateContact: (Contact *) contact;
+- (Contact *) updateContact: (Contact *) contact;
 - (Contact *) deleteContact: (Contact *) contact;
 
 @end

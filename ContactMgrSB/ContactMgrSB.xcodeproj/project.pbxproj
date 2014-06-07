@@ -23,8 +23,8 @@
 		224AE1111937B33800096DBD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 224AE10F1937B33800096DBD /* InfoPlist.strings */; };
 		224AE1131937B33800096DBD /* ContactMgrSBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 224AE1121937B33800096DBD /* ContactMgrSBTests.m */; };
 		22895744193A470000062411 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 2289573F193A470000062411 /* Contact.m */; };
-		22895745193A470000062411 /* ContactsSvcCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 22895742193A470000062411 /* ContactsSvcCache.m */; };
-		2289574B193A597600062411 /* ContactSvcsCacheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22895749193A597600062411 /* ContactSvcsCacheTests.m */; };
+		22895745193A470000062411 /* ContactSvcCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 22895742193A470000062411 /* ContactSvcCache.m */; };
+		2289574B193A597600062411 /* ContactSvcCacheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22895749193A597600062411 /* ContactSvcCacheTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,9 +62,9 @@
 		2289573E193A470000062411 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
 		2289573F193A470000062411 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
 		22895740193A470000062411 /* ContactsSvc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsSvc.h; sourceTree = "<group>"; };
-		22895741193A470000062411 /* ContactsSvcCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsSvcCache.h; sourceTree = "<group>"; };
-		22895742193A470000062411 /* ContactsSvcCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsSvcCache.m; sourceTree = "<group>"; };
-		22895749193A597600062411 /* ContactSvcsCacheTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactSvcsCacheTests.m; sourceTree = "<group>"; };
+		22895741193A470000062411 /* ContactSvcCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactSvcCache.h; sourceTree = "<group>"; };
+		22895742193A470000062411 /* ContactSvcCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactSvcCache.m; sourceTree = "<group>"; };
+		22895749193A597600062411 /* ContactSvcCacheTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactSvcCacheTests.m; sourceTree = "<group>"; };
 		22F8FF8C193BB77300636EA7 /* ContactOperationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactOperationDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -176,8 +176,8 @@
 				2289573E193A470000062411 /* Contact.h */,
 				2289573F193A470000062411 /* Contact.m */,
 				22895740193A470000062411 /* ContactsSvc.h */,
-				22895741193A470000062411 /* ContactsSvcCache.h */,
-				22895742193A470000062411 /* ContactsSvcCache.m */,
+				22895741193A470000062411 /* ContactSvcCache.h */,
+				22895742193A470000062411 /* ContactSvcCache.m */,
 			);
 			name = Model;
 			path = ../../ContactMgr/ContactMgr;
@@ -186,7 +186,7 @@
 		2289574A193A597600062411 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				22895749193A597600062411 /* ContactSvcsCacheTests.m */,
+				22895749193A597600062411 /* ContactSvcCacheTests.m */,
 			);
 			name = Model;
 			path = ../../ContactMgr/ContactMgrTests;
@@ -291,7 +291,7 @@
 			files = (
 				224AE0F51937B33800096DBD /* AppDelegate.m in Sources */,
 				224AE0FB1937B33800096DBD /* MasterViewController.m in Sources */,
-				22895745193A470000062411 /* ContactsSvcCache.m in Sources */,
+				22895745193A470000062411 /* ContactSvcCache.m in Sources */,
 				22895744193A470000062411 /* Contact.m in Sources */,
 				224AE0F11937B33800096DBD /* main.m in Sources */,
 				224AE0FE1937B33800096DBD /* DetailViewController.m in Sources */,
@@ -302,7 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2289574B193A597600062411 /* ContactSvcsCacheTests.m in Sources */,
+				2289574B193A597600062411 /* ContactSvcCacheTests.m in Sources */,
 				224AE1131937B33800096DBD /* ContactMgrSBTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

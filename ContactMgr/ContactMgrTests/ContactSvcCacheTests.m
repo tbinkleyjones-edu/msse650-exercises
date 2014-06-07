@@ -7,13 +7,13 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "ContactsSvcCache.h"
+#import "ContactSvcCache.h"
 
-@interface ContactSvcsCacheTests : XCTestCase
+@interface ContactSvcCacheTests : XCTestCase
 
 @end
 
-@implementation ContactSvcsCacheTests
+@implementation ContactSvcCacheTests
 
 //- (void)setUp
 //{
@@ -29,7 +29,7 @@
 
 - (void)testAddUpdateAndRemoveContacts
 {
-    ContactsSvcCache *service = [[ContactsSvcCache alloc] init];
+    ContactSvcCache *service = [[ContactSvcCache alloc] init];
     XCTAssertEqual([service retrieveAllContacts].count, 0);
 
     Contact *contact = [[Contact alloc] init];
@@ -39,7 +39,7 @@
     XCTAssertEqual([service retrieveAllContacts].count, 1);
 
     contact.phone = @"8675309";
-    [service udpateContact:contact];
+    [service updateContact:contact];
     XCTAssertEqual([service retrieveAllContacts].count, 1);
     Contact *updatedContact = [[service retrieveAllContacts] objectAtIndex:0];
     XCTAssertEqual(updatedContact.phone, @"8675309");

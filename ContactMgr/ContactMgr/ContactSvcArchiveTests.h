@@ -1,15 +1,14 @@
 //
-//  ContactSvcCache.h
+//  ContactSvcArchive.h
 //  ContactMgr
 //
-//  Created by Timothy Binkley-Jones on 5/22/14.
+//  Created by Tim Binkley-Jones on 6/7/14.
 //  Copyright (c) 2014 msse650. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-
 #import "ContactsSvc.h"
 
-@interface ContactsSvcCache : NSObject <ContactsSvc>
+@interface ContactSvcArchiveTests : NSObject <ContactSvc>
 
 @end

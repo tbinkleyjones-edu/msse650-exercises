@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 msse650. All rights reserved.
 //
 
-#import "ContactsSvcCache.h"
+#import "ContactSvcCache.h"
 
-@implementation ContactsSvcCache : NSObject 
+@implementation ContactSvcCache : NSObject 
 
 NSMutableArray *contacts = nil;
 
@@ -29,7 +29,7 @@ NSMutableArray *contacts = nil;
     return contacts;
 }
 
-- (Contact *) udpateContact: (Contact *) contact {
+- (Contact *) updateContact: (Contact *) contact {
     return contact;
 }
 

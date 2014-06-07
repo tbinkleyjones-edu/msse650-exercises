@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "Contact.h"
-#import "ContactsSvcCache.h"
+#import "ContactSvcCache.h"
 
 @interface ViewController ()
 
@@ -16,7 +16,7 @@
 
 @implementation ViewController
 
-ContactsSvcCache *contactsSvc = nil;
+ContactSvcCache *contactsSvc = nil;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,7 +32,7 @@ ContactsSvcCache *contactsSvc = nil;
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    contactsSvc = [[ContactsSvcCache alloc] init];
+    contactsSvc = [[ContactSvcCache alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
