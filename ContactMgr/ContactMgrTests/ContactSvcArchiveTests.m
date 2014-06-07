@@ -30,7 +30,7 @@
 
 - (void)testAddUpdateAndRemoveContacts
 {
-    ContactSvc *service = [[ContactSvcArchive alloc] init];
+    ContactSvcArchive *service = [[ContactSvcArchive alloc] init];
     XCTAssertEqual([service retrieveAllContacts].count, 0);
 
     Contact *contact = [[Contact alloc] init];
