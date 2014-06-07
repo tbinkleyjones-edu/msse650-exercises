@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2200022319435D8800B0295B /* ContactSvcArchiveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2200022219435D8800B0295B /* ContactSvcArchiveTests.m */; };
+		2200022319435D8800B0295B /* ContactSvcArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 2200022219435D8800B0295B /* ContactSvcArchive.m */; };
 		2200022519435EE700B0295B /* ContactSvcArchiveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2200022419435EE700B0295B /* ContactSvcArchiveTests.m */; };
 		22895748193A562500062411 /* ContactSvcCacheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22895747193A562500062411 /* ContactSvcCacheTests.m */; };
 		3D789CA8192E42D6004426F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D789CA7192E42D6004426F1 /* Foundation.framework */; };
@@ -39,8 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2200022119435D8800B0295B /* ContactSvcArchiveTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactSvcArchiveTests.h; sourceTree = "<group>"; };
-		2200022219435D8800B0295B /* ContactSvcArchiveTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactSvcArchiveTests.m; sourceTree = "<group>"; };
+		2200022119435D8800B0295B /* ContactSvcArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactSvcArchive.h; sourceTree = "<group>"; };
+		2200022219435D8800B0295B /* ContactSvcArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactSvcArchive.m; sourceTree = "<group>"; };
 		2200022419435EE700B0295B /* ContactSvcArchiveTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactSvcArchiveTests.m; sourceTree = "<group>"; };
 		22895747193A562500062411 /* ContactSvcCacheTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactSvcCacheTests.m; sourceTree = "<group>"; };
 		3D789CA4192E42D6004426F1 /* ContactMgr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactMgr.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,8 +185,8 @@
 				3D789CDF192E48C7004426F1 /* ContactsSvc.h */,
 				3D789CE0192E4957004426F1 /* ContactSvcCache.h */,
 				3D789CE1192E4957004426F1 /* ContactSvcCache.m */,
-				2200022119435D8800B0295B /* ContactSvcArchiveTests.h */,
-				2200022219435D8800B0295B /* ContactSvcArchiveTests.m */,
+				2200022119435D8800B0295B /* ContactSvcArchive.h */,
+				2200022219435D8800B0295B /* ContactSvcArchive.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -289,7 +289,7 @@
 			files = (
 				3D789CE2192E4957004426F1 /* ContactSvcCache.m in Sources */,
 				3D789CDE192E47EE004426F1 /* Contact.m in Sources */,
-				2200022319435D8800B0295B /* ContactSvcArchiveTests.m in Sources */,
+				2200022319435D8800B0295B /* ContactSvcArchive.m in Sources */,
 				3D789CD9192E45A3004426F1 /* ViewController.m in Sources */,
 				3D789CB8192E42D6004426F1 /* AppDelegate.m in Sources */,
 				3D789CB4192E42D6004426F1 /* main.m in Sources */,

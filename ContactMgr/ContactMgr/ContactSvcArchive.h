@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "ContactsSvc.h"
 
-@interface ContactSvcArchiveTests : NSObject <ContactSvc>
+@interface ContactSvcArchive : NSObject <ContactSvc>
 
 @end

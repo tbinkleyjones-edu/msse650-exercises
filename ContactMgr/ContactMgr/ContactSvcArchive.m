@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 msse650. All rights reserved.
 //
 
-#import "ContactSvcArchiveTests.h"
+#import "ContactSvcArchive.h"
 
-@implementation ContactSvcArchiveTests
+@implementation ContactSvcArchive
 
 - (Contact *)createContact:(Contact *)contact {
     return contact;
