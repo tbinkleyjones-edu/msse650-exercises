@@ -31,22 +31,24 @@
 - (void)testAddUpdateAndRemoveContacts
 {
     ContactSvcArchive *service = [[ContactSvcArchive alloc] init];
-    XCTAssertEqual([service retrieveAllContacts].count, 0);
+    NSInteger initialCount = [service retrieveAllContacts].count;
 
     Contact *contact = [[Contact alloc] init];
     contact.name = @"Joe User";
 
     [service createContact:contact];
-    XCTAssertEqual([service retrieveAllContacts].count, 1);
+    XCTAssertEqual([service retrieveAllContacts].count, initialCount + 1);
 
     contact.phone = @"8675309";
     [service updateContact:contact];
-    XCTAssertEqual([service retrieveAllContacts].count, 1);
-    Contact *updatedContact = [[service retrieveAllContacts] objectAtIndex:0];
+    XCTAssertEqual([service retrieveAllContacts].count, initialCount + 1);
+
+    NSInteger indexOfContact = [[service retrieveAllContacts] indexOfObject:contact];
+    Contact *updatedContact = [[service retrieveAllContacts] objectAtIndex:indexOfContact];
     XCTAssertEqual(updatedContact.phone, @"8675309");
 
     [service deleteContact:contact];
-    XCTAssertEqual([service retrieveAllContacts].count, 0);
+    XCTAssertEqual([service retrieveAllContacts].count, initialCount);
 }
 
 

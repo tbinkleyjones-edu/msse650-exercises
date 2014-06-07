@@ -8,7 +8,8 @@
 
 #import "ViewController.h"
 #import "Contact.h"
-#import "ContactSvcCache.h"
+//#import "ContactSvcCache.h"
+#import "ContactSvcArchive.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,8 @@
 
 @implementation ViewController
 
-ContactSvcCache *contactsSvc = nil;
+//ContactSvcCache *contactSvc = nil;
+ContactSvcArchive *contactSvc = nil;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,7 +34,7 @@ ContactSvcCache *contactsSvc = nil;
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    contactsSvc = [[ContactSvcCache alloc] init];
+    contactSvc = [[ContactSvcArchive alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -50,7 +52,7 @@ ContactSvcCache *contactsSvc = nil;
     contact.name = _name.text;
     contact.phone = _phone.text;
     contact.email = _email.text;
-    [contactsSvc createContact:contact];
+    [contactSvc createContact:contact];
     
     [self.tableView reloadData];
     NSLog(@"saveContact: contact saved!");
@@ -64,7 +66,7 @@ ContactSvcCache *contactsSvc = nil;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSInteger count = [[contactsSvc retrieveAllContacts] count];
+    NSInteger count = [[contactSvc retrieveAllContacts] count];
     NSLog(@"number of rows in section %ld: %ld", (long)section, (long)count);
     return count;
 }
@@ -79,8 +81,8 @@ ContactSvcCache *contactsSvc = nil;
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
     }
     
-    Contact *contact = [[contactsSvc retrieveAllContacts] objectAtIndex:indexPath.row];
-    cell.textLabel.text = contact.name;
+    Contact *contact = [[contactSvc retrieveAllContacts] objectAtIndex:indexPath.row];
+    cell.textLabel.text = [contact description];
     return cell;
 }
 
