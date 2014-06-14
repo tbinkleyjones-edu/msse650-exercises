@@ -46,12 +46,12 @@
     Contact *updatedContact = nil;
     for (Contact *next in [service retrieveAllContacts]) {
         if (next.id == contact.id) {
-            updatedContact = contact;
+            updatedContact = next;
             break;
         }
     }
 
-    XCTAssertEqual(updatedContact.phone, @"8675309");
+    XCTAssertTrue([updatedContact.phone isEqualToString:@"8675309"], @"phone numbers do not match");
 
     [service deleteContact:contact];
     XCTAssertEqual([service retrieveAllContacts].count, initialCount);
