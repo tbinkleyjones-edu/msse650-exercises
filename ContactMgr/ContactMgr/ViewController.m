@@ -9,7 +9,8 @@
 #import "ViewController.h"
 #import "Contact.h"
 //#import "ContactSvcCache.h"
-#import "ContactSvcArchive.h"
+//#import "ContactSvcArchive.h"
+#import "ContactSvcSQLite.h"
 
 @interface ViewController ()
 
@@ -18,7 +19,8 @@
 @implementation ViewController
 
 //ContactSvcCache *contactSvc = nil;
-ContactSvcArchive *contactSvc = nil;
+//ContactSvcArchive *contactSvc = nil;
+ContactSvcSQLite *contactSvc = nil;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,7 +36,7 @@ ContactSvcArchive *contactSvc = nil;
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    contactSvc = [[ContactSvcArchive alloc] init];
+    contactSvc = [[ContactSvcSQLite alloc] init];
 }
 
 - (void)didReceiveMemoryWarning

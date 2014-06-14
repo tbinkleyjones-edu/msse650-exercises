@@ -10,6 +10,7 @@
 
 @interface Contact : NSObject <NSCoding>
 
+@property (nonatomic) NSInteger id;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *phone;
 @property (nonatomic, strong) NSString *email;

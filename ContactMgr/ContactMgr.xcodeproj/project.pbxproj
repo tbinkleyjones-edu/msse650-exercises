@@ -10,6 +10,9 @@
 		2200022319435D8800B0295B /* ContactSvcArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 2200022219435D8800B0295B /* ContactSvcArchive.m */; };
 		2200022519435EE700B0295B /* ContactSvcArchiveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2200022419435EE700B0295B /* ContactSvcArchiveTests.m */; };
 		22895748193A562500062411 /* ContactSvcCacheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22895747193A562500062411 /* ContactSvcCacheTests.m */; };
+		229145131947831700F71113 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 229145121947831700F71113 /* libsqlite3.dylib */; };
+		229145161947833A00F71113 /* ContactSvcSQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 229145151947833A00F71113 /* ContactSvcSQLite.m */; };
+		22914518194783DA00F71113 /* ContactSvcSQLiteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22914517194783DA00F71113 /* ContactSvcSQLiteTests.m */; };
 		3D789CA8192E42D6004426F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D789CA7192E42D6004426F1 /* Foundation.framework */; };
 		3D789CAA192E42D6004426F1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D789CA9192E42D6004426F1 /* CoreGraphics.framework */; };
 		3D789CAC192E42D6004426F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D789CAB192E42D6004426F1 /* UIKit.framework */; };
@@ -43,6 +46,10 @@
 		2200022219435D8800B0295B /* ContactSvcArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactSvcArchive.m; sourceTree = "<group>"; };
 		2200022419435EE700B0295B /* ContactSvcArchiveTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactSvcArchiveTests.m; sourceTree = "<group>"; };
 		22895747193A562500062411 /* ContactSvcCacheTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactSvcCacheTests.m; sourceTree = "<group>"; };
+		229145121947831700F71113 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		229145141947833A00F71113 /* ContactSvcSQLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactSvcSQLite.h; sourceTree = "<group>"; };
+		229145151947833A00F71113 /* ContactSvcSQLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactSvcSQLite.m; sourceTree = "<group>"; };
+		22914517194783DA00F71113 /* ContactSvcSQLiteTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactSvcSQLiteTests.m; sourceTree = "<group>"; };
 		3D789CA4192E42D6004426F1 /* ContactMgr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactMgr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D789CA7192E42D6004426F1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3D789CA9192E42D6004426F1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -74,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				229145131947831700F71113 /* libsqlite3.dylib in Frameworks */,
 				3D789CAA192E42D6004426F1 /* CoreGraphics.framework in Frameworks */,
 				3D789CAC192E42D6004426F1 /* UIKit.framework in Frameworks */,
 				3D789CA8192E42D6004426F1 /* Foundation.framework in Frameworks */,
@@ -98,6 +106,7 @@
 			children = (
 				22895747193A562500062411 /* ContactSvcCacheTests.m */,
 				2200022419435EE700B0295B /* ContactSvcArchiveTests.m */,
+				22914517194783DA00F71113 /* ContactSvcSQLiteTests.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -124,6 +133,7 @@
 		3D789CA6192E42D6004426F1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				229145121947831700F71113 /* libsqlite3.dylib */,
 				3D789CA7192E42D6004426F1 /* Foundation.framework */,
 				3D789CA9192E42D6004426F1 /* CoreGraphics.framework */,
 				3D789CAB192E42D6004426F1 /* UIKit.framework */,
@@ -187,6 +197,8 @@
 				3D789CE1192E4957004426F1 /* ContactSvcCache.m */,
 				2200022119435D8800B0295B /* ContactSvcArchive.h */,
 				2200022219435D8800B0295B /* ContactSvcArchive.m */,
+				229145141947833A00F71113 /* ContactSvcSQLite.h */,
+				229145151947833A00F71113 /* ContactSvcSQLite.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -287,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				229145161947833A00F71113 /* ContactSvcSQLite.m in Sources */,
 				3D789CE2192E4957004426F1 /* ContactSvcCache.m in Sources */,
 				3D789CDE192E47EE004426F1 /* Contact.m in Sources */,
 				2200022319435D8800B0295B /* ContactSvcArchive.m in Sources */,
@@ -303,6 +316,7 @@
 				22895748193A562500062411 /* ContactSvcCacheTests.m in Sources */,
 				3D789CCD192E42D6004426F1 /* ContactMgrTests.m in Sources */,
 				2200022519435EE700B0295B /* ContactSvcArchiveTests.m in Sources */,
+				22914518194783DA00F71113 /* ContactSvcSQLiteTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
