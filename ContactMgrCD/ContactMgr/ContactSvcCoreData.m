@@ -82,6 +82,10 @@ NSManagedObjectContext *moc = nil;
 
 - (Contact *) deleteContact: (Contact *) contact {
     [moc deleteObject:contact];
+    NSError *error;
+    if (![moc save:&error]) {
+        NSLog(@"updateContact ERROR: %@", [error localizedDescription]);
+    }
     return contact;
 }
 
